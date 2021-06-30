@@ -65,7 +65,7 @@ def get_predict(
         ]
     )
 
-    model = joblib.load("model.joblib")
+    model = joblib.load("../model.joblib")
 
     prediction = model.predict(df)
     return prediction[0]
